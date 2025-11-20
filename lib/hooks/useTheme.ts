@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 
-type Theme = 'light' | 'dark' | 'system';
+export type Theme = 'light' | 'dark' | 'system';
 
 const THEME_KEY = 'theme';
 const SYSTEM_PROPERTY = '(prefers-color-scheme: dark)';
