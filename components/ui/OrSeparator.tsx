@@ -1,6 +1,6 @@
 export default function OrSeparator() {
   return (
-    <div className="flex items-center md:flex-col md:h-full md:justify-center w-full my-3">
+    <div className="flex items-center md:flex-col md:h-full md:justify-center w-full my-3 md:max-w-10 mx-auto min-h-20">
       
       {/* Line before OR */}
       <div className="flex-1 border-t md:border-t-0 md:border-3 border-border"></div>
