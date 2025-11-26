@@ -9,11 +9,11 @@ const brandButtonVariants = cva(
     variants: {
         variant: {
             primary:
-            "bg-primary-main text-neutral-lightest border-primary-dark border-2 physical-primary-button rounded-full hover:bg-primary-dark focus:primary-dark",
+            "label-style bg-primary-main text-neutral-lightest border-primary-dark border-2 physical-primary-button rounded-full hover:bg-primary-dark focus:primary-dark",
             secondary:
-            "bg-secondary-main text-neutral-darkest border-secondary-dark border-2 physical-secondary-button rounded-full hover:bg-secondary-dark focus:secondary-dark",
+            "label-style bg-secondary-main text-neutral-darkest border-secondary-dark border-2 physical-secondary-button rounded-full hover:bg-secondary-dark focus:secondary-dark",
             muted:
-            "text-black",
+            "label-style text-neutral-darkest bg-transparent hover:bg-transparent focus:bg-transparent hover:text-primary-main",
         },
         size: {
             default: "px-6 py-4 text-[16px]",

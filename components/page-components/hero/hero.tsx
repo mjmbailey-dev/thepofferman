@@ -10,7 +10,7 @@ export default function Hero(){
     return(
         <section className="w-full bg-secondary-lighter h-auto flex justify-center py-20 ">
             <div className="max-w-7xl mt-20 mx-10 w-full">
-                <div className="border-2 rounded-3xl border-primary-dark flex flex-col lg:flex-row align-middle justify-between p-15">
+                <div className="border-4 rounded-3xl border-primary-dark flex flex-col lg:flex-row align-middle justify-between p-15">
                     <div className="flex flex-col align-middle items-center justify-between gap-4">
                         <h1 className="header-style text-center">Do You Know The  <br/>PofferMan?!</h1>
                         <div className="flex flex-col gap-5">
