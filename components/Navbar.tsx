@@ -3,45 +3,47 @@ import useTheme from "@/lib/hooks/useTheme";
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "./ui/navigation-menu";
 import { Button } from "./ui/button";
 import ThemeSelect from "./ThemeSelect";
-import Image from "next/image";
 import { SidebarTrigger } from "./ui/sidebar";
+import BrandButton from "./ui/custom/BrandButton";
+import { cn } from "@/lib/utils";
+
+const linkClasses = "text-primary-main label-style hover:bg-primary-light focus:bg-primary-light data-[state=open]:hover:bg-primary-light data-[state=open]:focus:bg-primary-light data-[state=open]:focus:text-secondary-light hover:text-secondary-light focus:text-secondary-light data-[state=open]:hover:text-secondary-light hidden lg:block"
 
 export default function Navbar() {
     useTheme();
     return(
-        <div className="block">
-            <NavigationMenu viewport={false} className="px-10 w-full m-auto grid grid-cols-3 justify-center min-h-20 md:min-h-24 max-w-dvw">
-                    <div className="mt-5 z-50 max-h-20 md:max-h-24 max-w-20 md:max-w-24 items-start rounded-full overflow-hidden grid-cols-1">
-                        <Image src="/Logo.jpg" alt="Company Logo" width={500} height={500} className="object-contain" />
-                    </div>
-                    <NavigationMenuList className="hidden md:flex align-left justify-center">
-                        <NavigationMenuItem>
-                            <NavigationMenuTrigger>Item One</NavigationMenuTrigger>
-                            <NavigationMenuContent className="">
-                                <NavigationMenuLink  className="">Link</NavigationMenuLink>
-                            </NavigationMenuContent>
-                        </NavigationMenuItem>
-                        <NavigationMenuItem>
-                            <NavigationMenuTrigger>Item Two</NavigationMenuTrigger>
-                            <NavigationMenuContent className="">
-                                <NavigationMenuLink>Link</NavigationMenuLink>
-                            </NavigationMenuContent>
-                        </NavigationMenuItem>
-                        <NavigationMenuItem>
-                            <NavigationMenuTrigger>Item Three</NavigationMenuTrigger>
-                            <NavigationMenuContent>
-                                <NavigationMenuLink>Link</NavigationMenuLink>
-                            </NavigationMenuContent>
-                        </NavigationMenuItem>
-                    </NavigationMenuList>
-                    <NavigationMenuList className="justify-end">
-                        <ThemeSelect/>
-                        <Button>
-                            Contact Us
-                        </Button>
-                        <SidebarTrigger className="md:hidden"/>
-                    </NavigationMenuList>
-            </NavigationMenu>
+        <div className="fixed bg-secondary-lighter min-h-20 w-full border-b-2 border-primary-light z-50 flex justify-center">
+                <div className="max-w-7xl w-full mx-10 flex justify-between items-center align-middle">
+                            
+                    <h1 className="header-style text-primary-main text-[48px]! ">The Pofferman</h1>
+                            
+                    <NavigationMenu viewport={false} className="h-auto min-h-20 w-full flex justify-between items-center align-middle">
+                            <NavigationMenuList className="flex align-left justify-center gap-6">
+                                <NavigationMenuItem>
+                                    <NavigationMenuLink  className={linkClasses}>About Us</NavigationMenuLink>
+                                </NavigationMenuItem>
+                                <NavigationMenuItem>
+                                    <NavigationMenuLink className={linkClasses}>Private Events</NavigationMenuLink>
+                                </NavigationMenuItem>
+                                <NavigationMenuItem>
+                                    <NavigationMenuTrigger className="hidden md:flex text-primary-main label-style bg-transparent 
+                                    hover:bg-primary-light focus:bg-primary-light data-[state=open]:hover:bg-primary-light data-[state=open]:focus:bg-primary-light 
+                                    data-[state=open]:focus:text-secondary-light hover:text-secondary-light focus:text-secondary-light data-[state=open]:hover:text-secondary-light">
+                                        More</NavigationMenuTrigger>
+                                    <NavigationMenuContent>
+                                        <NavigationMenuLink>Link</NavigationMenuLink>
+                                    </NavigationMenuContent>
+                                </NavigationMenuItem>
+                                <BrandButton variant="secondary" className="hidden md:inline-flex">
+                                    Find Us
+                                </BrandButton>
+                                <BrandButton variant="primary" className="hidden sm:inline-flex">
+                                    Contact Us
+                                </BrandButton>
+                                <SidebarTrigger className="md:hidden" variant={"outline"}/>
+                            </NavigationMenuList>
+                    </NavigationMenu>
+                </div>
         </div>
     )
 }

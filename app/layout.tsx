@@ -1,20 +1,22 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import ThemeProvider from "@/components/providers/ThemeProvider";
-import useTheme from "@/lib/hooks/useTheme";
 import { SidebarProvider } from "@/components/ui/sidebar";
 import AppSidebar from "@/components/AppSidebar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+import { Inter, Norican } from "next/font/google";
+
+const norican = Norican({
+  weight: "400",
   subsets: ["latin"],
+  variable: "--font-norican",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const inter = Inter({
+  weight: ["400", "600", "700"],
   subsets: ["latin"],
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
@@ -29,18 +31,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="w-screen overflow-x-hidden">
       <head>
         <ThemeProvider/>
       </head>
       <body
-            className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+            className={`${norican.variable} ${inter.variable} antialiased w-screen css-selector dark:dark-css-selector`}
             >
         <SidebarProvider>
           <main className="w-full">
             <AppSidebar/>
             <Navbar/>
-          {children}
+            {children}
           </main>
         </SidebarProvider>
       </body>
