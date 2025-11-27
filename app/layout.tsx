@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="w-screen overflow-x-hidden">
       <head>
-        <ThemeProvider/>
+        {/* <ThemeProvider/> */}
       </head>
       <body
             className={`${norican.variable} ${inter.variable} antialiased w-screen css-selector dark:dark-css-selector`}
