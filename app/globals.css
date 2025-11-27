@@ -245,7 +245,7 @@
 
   .physical-primary-button {
     box-shadow: 0px 4px 0px var(--color-primary-dark);
-    transition: all 0.05s ease-in-out;
+    transition: all 0.1s ease-in-out;
   }
 
   .physical-primary-button:active {
@@ -254,7 +254,7 @@
   }
   .physical-secondary-button {
     box-shadow: 0px 4px 0px var(--color-secondary-dark);
-    transition: all 0.05s ease-in-out;
+    transition: all 0.1s ease-in-out;
   }
 
   .physical-secondary-button:active {
