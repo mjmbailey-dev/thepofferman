@@ -7,7 +7,7 @@ export default function LoyaltyRewards() {
                 <h2 className="header-style text-center text-primary-main">Loyalty Rewards!</h2>
                 <div className="flex flex-col lg:flex-row items-center align-middle justify-between mt-20 gap-10">
                     <div className="flex flex-col text-center justify-center align-middle gap-8">
-                        <h3 className="emphasise-style text-center">Loyalty Cards!</h3>
+                        <h3 className="emphasise-style text-neutral-darkest text-center">Loyalty Cards!</h3>
                         <p className="text-style text-center max-w-80">Stamp your loyalty card and get Free Pofferjies</p>
                     </div>
                     <div className="md:min-w-2xl">

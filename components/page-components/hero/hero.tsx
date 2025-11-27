@@ -12,7 +12,7 @@ export default function Hero(){
             <div className="max-w-7xl mt-20 mx-10 w-full">
                 <div className="border-4 rounded-3xl border-primary-dark flex flex-col lg:flex-row align-middle justify-between mx-5 md:mx-0 p-15">
                     <div className="flex flex-col align-middle items-center justify-between gap-4">
-                        <h1 className="header-style text-center text-5xl! sm:text-6xl!">Do You Know The  <br/>PofferMan?!</h1>
+                        <h1 className="header-style text-center text-5xl! sm:text-6xl! text-neutral-darkest">Do You Know The  <br/>PofferMan?!</h1>
                         <div className="flex flex-col gap-5">
                             <p className="text-style text-center">{"Golden brown, Fluffy and Sweet, it`s a real joy to eat!"}</p>
                             <p className="text-style text-center">The PofferMan brings traditional Dutch pancakes to life!</p>
