@@ -3,7 +3,7 @@ import { ArrowRight, ChefHatIcon, PartyPopper, ReceiptText } from "lucide-react"
 
 export default function WhyUs(){
     return(
-        <section className="w-full h-auto bg-secondary-lighter flex justify-center py-10">
+        <section className="w-full h-auto bg-secondary-lightest flex justify-center py-10">
             <div className="max-w-7xl mx-10 mt-10">
                 <div className="flex flex-col gap-20">
                     <div className="flex flex-col align-middle text-center gap-10 my-5">

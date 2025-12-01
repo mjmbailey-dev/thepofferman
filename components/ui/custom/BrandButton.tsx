@@ -1,4 +1,3 @@
-import { Children } from "react";
 import { Button } from "../button";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
@@ -13,7 +12,7 @@ const brandButtonVariants = cva(
             secondary:
             "label-style bg-secondary-main text-neutral-darkest border-secondary-dark border-2 physical-secondary-button rounded-full hover:bg-secondary-dark focus:secondary-dark",
             muted:
-            "label-style text-neutral-darkest bg-transparent hover:bg-transparent focus:bg-transparent hover:text-primary-main",
+            "label-style text-neutral-darkest bg-transparent hover:bg-transparent hover:scale-115 focus:bg-transparent hover:text-primary-main",
         },
         size: {
             default: "px-6 py-4 text-[16px]",

@@ -7,7 +7,7 @@ import BiscoffIcon from "./svgs/Biscoff/Biscoff";
 
 export default function Menu(){
     return(
-        <section className="w-full min-h-screen bg-primary-dark flex justify-center">
+        <section className="w-full min-h-screen bg-primary-dark flex justify-center border-b-5 border-secondary-main">
             <div className="max-w-7xl w-full flex justify-center py-10 md:py-15 mx-10">
                 <div className="flex flex-col align-middle text-center items-center my-10 gap-20 w-full">
                     <h1 className="header-style text-neutral-lightest">The Menu</h1>
