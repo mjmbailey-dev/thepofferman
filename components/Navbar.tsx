@@ -6,6 +6,7 @@ import ThemeSelect from "./ThemeSelect";
 import { SidebarTrigger } from "./ui/sidebar";
 import BrandButton from "./ui/custom/BrandButton";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 const linkClasses = "text-primary-main label-style hover:bg-primary-light focus:bg-primary-light data-[state=open]:hover:bg-primary-light data-[state=open]:focus:bg-primary-light data-[state=open]:focus:text-secondary-light hover:text-secondary-light focus:text-secondary-light data-[state=open]:hover:text-secondary-light hidden lg:block"
 
@@ -14,13 +15,14 @@ export default function Navbar() {
     return(
         <div className="fixed bg-secondary-lighter min-h-20 w-full border-b-2 border-primary-light z-50 flex justify-center">
                 <div className="max-w-7xl w-full mx-10 flex justify-between items-center align-middle">
-                            
-                    <h1 className="header-style text-primary-main text-[48px]! ">The Pofferman</h1>
+                    <Link className="" href='/'>
+                        <h1 className="header-style text-primary-main text-[48px]! ">The Pofferman</h1>
+                    </Link>        
                             
                     <NavigationMenu viewport={false} className="h-auto min-h-20 w-full flex justify-between items-center align-middle">
                             <NavigationMenuList className="flex align-left justify-center gap-6">
                                 <NavigationMenuItem>
-                                    <NavigationMenuLink  className={linkClasses}>About Us</NavigationMenuLink>
+                                    <NavigationMenuLink asChild className={linkClasses}><Link href={'/about-us'}>About Us</Link></NavigationMenuLink>
                                 </NavigationMenuItem>
                                 <NavigationMenuItem>
                                     <NavigationMenuLink className={linkClasses}>Private Events</NavigationMenuLink>
@@ -29,9 +31,10 @@ export default function Navbar() {
                                     <NavigationMenuTrigger className="hidden md:flex text-primary-main label-style bg-transparent 
                                     hover:bg-primary-light focus:bg-primary-light data-[state=open]:hover:bg-primary-light data-[state=open]:focus:bg-primary-light 
                                     data-[state=open]:focus:text-secondary-light hover:text-secondary-light focus:text-secondary-light data-[state=open]:hover:text-secondary-light">
-                                        More</NavigationMenuTrigger>
+                                        More
+                                    </NavigationMenuTrigger>
                                     <NavigationMenuContent>
-                                        <NavigationMenuLink>Link</NavigationMenuLink>
+                                        <NavigationMenuLink asChild><Link href='/the-menu'>The Menu</Link></NavigationMenuLink>
                                     </NavigationMenuContent>
                                 </NavigationMenuItem>
                                 <BrandButton variant="secondary" className="hidden md:inline-flex">
