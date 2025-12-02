@@ -3,7 +3,7 @@ import { CalendarCheck, ChevronRight, Store } from "lucide-react";
 
 export default function HomeCTA(){
     return(
-        <section className="bg-neutral-lightest flex justify-center w-full py-10 md:py-20">
+        <section className="bg-neutral-lightest flex justify-center w-full py-10 md:py-20 border-neutral-lightest! outline-border-lightest!">
             <div className="max-w-7xl w-full flex flex-col mx-10 gap-5 justify-center">
                 <div className="flex flex-col md:flex-row">
                     <div className="flex flex-1 flex-col">
