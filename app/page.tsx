@@ -1,4 +1,5 @@
 import Hero from "@/components/page-components/home-components/hero/hero";
+import HomeCTA from "@/components/page-components/home-components/home-cta/home-cta";
 import LoyaltyRewards from "@/components/page-components/home-components/loyalty-rewards/LoyaltyRewards";
 import MarketLocations from "@/components/page-components/home-components/market-locations/MarketLocations";
 import Menu from "@/components/page-components/home-components/menu/menu";
@@ -12,6 +13,7 @@ export default function Home() {
       <Menu/>
       <LoyaltyRewards/>
       <MarketLocations/>
+      <HomeCTA/>
     </div>
   );
 }

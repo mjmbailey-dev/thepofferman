@@ -11,7 +11,7 @@ export default function AboutUsGallery(){
                     <p className="emphasise-style text-xl! text-neutral-lightest text-center">Moments that shaped The Pofferman from dream to reality.</p>
                     <div className="grid grid-cols-2 md:grid-cols-4 grid-rows-4 md:grid-rows-2 gap-5 py-10">
                         <div className="relative col-span-2 row-span-2 aspect-square">
-                            <Image src="/Logo.jpg" alt="Logo" fill  className="aspect-square rounded-xl"/>
+                            <Image src="/insta-screenshot-4.png" alt="Logo" fill  className="aspect-square rounded-xl"/>
                         </div>
                         <div className="relative col-span-1 row-span-1 aspect-square">
                             <Image src="/insta-screenshot-1.png" alt="Logo" fill  className="aspect-square rounded-xl"/>
@@ -23,7 +23,7 @@ export default function AboutUsGallery(){
                             <Image src="/insta-screenshot-3.png" alt="Logo" fill  className="aspect-square rounded-xl"/>
                         </div>
                         <div className="relative col-span-1 row-span-1 aspect-square">
-                            <Image src="/insta-screenshot-4.png" alt="Logo" fill  className="aspect-square rounded-xl"/>
+                            <Image src="/Logo.jpg" alt="Logo" fill  className="aspect-square rounded-xl"/>
                         </div>
                     </div>
                 </div>
