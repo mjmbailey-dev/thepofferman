@@ -223,7 +223,7 @@
   }
 
   h2 {
-    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-norican leading-snug;
+    @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-inter font-bold leading-snug;
   }
 
   h3 {
@@ -267,8 +267,9 @@
   .footer-link {
     @apply text-xl text-primary-foreground font-bold underline-offset-4 hover:underline hover:text-primary-foreground;
   }
+  
   .nav-link {
-    @apply text-xl text-primary font-bold underline-offset-4 hover:underline hover:text-primary-foreground;
+    @apply text-xl text-primary font-bold;
   }
 
   .text-on-dark {

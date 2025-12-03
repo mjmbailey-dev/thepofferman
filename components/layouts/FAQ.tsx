@@ -16,13 +16,12 @@ type FAQProps = {
   subtitle?: string
   items: FAQItem[]
   type: 'multiple' | 'single'
-  collapsible?: boolean
   className?: string
 }
 
-export default function FAQ({ items, type = 'multiple', collapsible = true}: FAQProps) {
+export default function FAQ({ items, type = 'multiple'}: FAQProps) {
   return (
-    <Accordion type={type} collapsible={collapsible} className="space-y-3 w-full">
+    <Accordion type={type} className="space-y-3 w-full">
         {items.map((faq, index) => (
         <AccordionItem
             key={index}
@@ -30,7 +29,7 @@ export default function FAQ({ items, type = 'multiple', collapsible = true}: FAQ
             className="group rounded-md px-4 py-1 ring-1"
         >   
             
-            <AccordionTrigger className="group flex text-left font-bold justify-between">
+            <AccordionTrigger className="group flex text-left font-bold justify-between hover:no-underline focus:no-underline">
                 <span>{faq.question}</span>
             </AccordionTrigger>
 
