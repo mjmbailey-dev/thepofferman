@@ -1,6 +1,6 @@
 'use client'
 
-import useTheme from "@/lib/hooks/useTheme"
+import useTheme from "@/hooks/useTheme"
 
 export default function ThemeProvider() {
     useTheme();

@@ -1,9 +1,9 @@
-import Hero from "@/components/page-components/home-components/hero/hero";
-import HomeCTA from "@/components/page-components/home-components/home-cta/home-cta";
-import LoyaltyRewards from "@/components/page-components/home-components/loyalty-rewards/LoyaltyRewards";
-import MarketLocations from "@/components/page-components/home-components/market-locations/MarketLocations";
-import Menu from "@/components/page-components/home-components/menu/menu";
-import WhyUs from "@/components/page-components/home-components/why-us/why-us";
+import Hero from "@/components/sections/home/hero";
+import HomeCTA from "@/components/sections/home/home-cta";
+import LoyaltyRewards from "@/components/sections/home/LoyaltyRewards";
+import MarketLocations from "@/components/sections/home/MarketLocations";
+import Menu from "@/components/sections/home/menu";
+import WhyUs from "@/components/sections/home/why-us";
 
 export default function Home() {
   return (

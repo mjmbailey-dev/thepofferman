@@ -3,26 +3,31 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const brandButtonVariants = cva(
-    "", 
+    "rounded-full font-inter font-semibold transition-all hover:cursor-pointer", 
     {
     variants: {
         variant: {
             primary:
-            "label-style bg-primary-main text-neutral-lightest border-primary-dark border-2 physical-primary-button rounded-full hover:bg-primary-dark focus:primary-dark hover:cursor-pointer",
+            "bg-primary-main border-primary-dark border-2 physical-primary-button hover:bg-primary-dark focus:primary-dark",
             secondary:
-            "label-style bg-secondary-main text-neutral-darkest border-secondary-dark border-2 physical-secondary-button rounded-full hover:bg-secondary-dark focus:secondary-dark hover:cursor-pointer",
+            "bg-secondary-main text-secondary-foreground border-secondary-dark border-2 physical-secondary-button hover:bg-secondary-dark focus:secondary-dark",
             muted:
-            "label-style text-neutral-darkest bg-transparent hover:bg-transparent hover:scale-115 focus:bg-transparent hover:text-primary-main hover:cursor-pointer",
+            "bg-transparent hover:bg-transparent text-muted-foreground hover:text-primary hover:scale-110",
         },
         size: {
-            default: "px-6 py-4 text-[16px]",
-            sm: "px-4 py-2 text-[14px]",
-            lg: "px-8 py-6 text-[20px]",
+            default: "px-4 py-2 text-sm",
+            sm: "px-6 py-3 text-base",
+            lg: "px-8 py-4 text-lg md:px-10 md:py-5 md:text-xl",
+        },
+        fullWidth: {
+            true: "w-full sm:w-auto",
+            false: "w-auto",
         },
     },
     defaultVariants: {
         variant: "primary",
         size: "default",
+        fullWidth: false,
     },
 });
 
@@ -31,6 +36,7 @@ export default function BrandButton({
     className,
     variant,
     size,
+    fullWidth,
     asChild = false,
     ...props
 }: React.ComponentProps<"button"> &
@@ -40,7 +46,7 @@ export default function BrandButton({
     return(
     <Button
     {...props}
-    className={cn(brandButtonVariants({variant , size}), className)}
+    className={cn(brandButtonVariants({variant , size, fullWidth}), className)}
     /> 
     )
 }

@@ -4,38 +4,42 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.1450 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.1450 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.1450 0 0);
-  --primary: oklch(0.2050 0 0);
-  --primary-foreground: oklch(0.9850 0 0);
-  --secondary: oklch(0.9700 0 0);
-  --secondary-foreground: oklch(0.2050 0 0);
-  --muted: oklch(0.9700 0 0);
-  --muted-foreground: oklch(0.5560 0 0);
-  --accent: oklch(0.9700 0 0);
-  --accent-foreground: oklch(0.2050 0 0);
+  --background: var(--color-neutral-lightest);
+  --background-1: var(--color-secondary-lightest);
+  --background-2: var(--color-secondary-lighter);
+  --background-3: var(--color-primary-dark);
+  --background-4: var(--color-neutral-lightest);
+  --foreground: var(--color-neutral-darkest);
+  --card: var(--color-secondary-lightest);
+  --card-foreground: var(--color-neutral-darkest);
+  --popover: var(--color-secondary-lightest);
+  --popover-foreground: var(--color-neutral-darkest);
+  --primary: var(--color-primary-main);
+  --primary-foreground: var(--color-neutral-lightest);
+  --secondary: var(--color-secondary-main);
+  --secondary-foreground: var(--color-neutral-darkest);
+  --muted: var(--color-neutral-lighter);
+  --muted-foreground: var(--color-neutral-dark);
+  --accent: var(--color-secondary-light);
+  --accent-foreground: var(--color-neutral-darkest);
   --destructive: oklch(0.5770 0.2450 27.3250);
   --destructive-foreground: oklch(1 0 0);
-  --border: oklch(0.9220 0 0);
-  --input: oklch(0.9220 0 0);
-  --ring: oklch(0.7080 0 0);
+  --border: var(--color-neutral-light);
+  --input: var(--color-neutral-light);
+  --ring: var(--color-primary-main);
   --chart-1: oklch(0.8100 0.1000 252);
   --chart-2: oklch(0.6200 0.1900 260);
   --chart-3: oklch(0.5500 0.2200 263);
   --chart-4: oklch(0.4900 0.2200 264);
   --chart-5: oklch(0.4200 0.1800 266);
-  --sidebar: oklch(0.9850 0 0);
-  --sidebar-foreground: oklch(0.1450 0 0);
-  --sidebar-primary: oklch(0.2050 0 0);
-  --sidebar-primary-foreground: oklch(0.9850 0 0);
-  --sidebar-accent: oklch(0.9700 0 0);
-  --sidebar-accent-foreground: oklch(0.2050 0 0);
-  --sidebar-border: oklch(0.9220 0 0);
-  --sidebar-ring: oklch(0.7080 0 0);
+  --sidebar: var(--color-primary-lightest);
+  --sidebar-foreground: var(--color-primary-darkest);
+  --sidebar-primary: var(--color-primary-main); 
+  --sidebar-primary-foreground: var(--color-neutral-lightest);
+  --sidebar-accent: var(--color-secondary-main);
+  --sidebar-accent-foreground: var(--color-neutral-darkest);
+  --sidebar-border: var(--color-primary-dark);
+  --sidebar-ring: var(--color-primary-main);
   --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -56,43 +60,45 @@
   --shadow-2xl: 0 1px 3px 0px hsl(0 0% 0% / 0.25);
   --tracking-normal: 0em;
   --spacing: 0.25rem;
-
-
 }
 
-.dark {
-  --background: oklch(0.1450 0 0);
-  --foreground: oklch(0.9850 0 0);
-  --card: oklch(0.2050 0 0);
-  --card-foreground: oklch(0.9850 0 0);
-  --popover: oklch(0.2690 0 0);
-  --popover-foreground: oklch(0.9850 0 0);
-  --primary: oklch(0.9220 0 0);
-  --primary-foreground: oklch(0.2050 0 0);
-  --secondary: oklch(0.2690 0 0);
-  --secondary-foreground: oklch(0.9850 0 0);
-  --muted: oklch(0.2690 0 0);
-  --muted-foreground: oklch(0.7080 0 0);
-  --accent: oklch(0.3710 0 0);
-  --accent-foreground: oklch(0.9850 0 0);
+/* .dark {
+  --background: var(--color-primary-darkest);
+  --background-1: oklch(20% 0.04 30);
+  --background-2: oklch(25% 0.04 30);
+  --background-3: oklch(30% 0.05 30);
+  --background-4: oklch(35% 0.05 30);
+  --foreground: var(--color-neutral-lightest);
+  --card: var(--color-primary-darker);
+  --card-foreground: var(--color-neutral-lightest);
+  --popover: var(--color-primary-darker);
+  --popover-foreground: var(--color-neutral-lightest);
+  --primary: var(--color-secondary-main); 
+  --primary-foreground: var(--color-neutral-darkest);
+  --secondary: var(--color-primary-main);
+  --secondary-foreground: var(--color-neutral-darkest);
+  --muted: var(--color-primary-darker);
+  --muted-foreground: var(--color-neutral-light);
+  --accent: var(--color-secondary-main);
+  --accent-foreground: var(--color-neutral-darkest);
   --destructive: oklch(0.7040 0.1910 22.2160);
   --destructive-foreground: oklch(0.9850 0 0);
-  --border: oklch(0.2750 0 0);
-  --input: oklch(0.3250 0 0);
-  --ring: oklch(0.5560 0 0);
+  --border: var(--color-primary-dark);
+  --input: var(--color-primary-dark);
+  --ring: var(--color-secondary-main);
   --chart-1: oklch(0.8100 0.1000 252);
   --chart-2: oklch(0.6200 0.1900 260);
   --chart-3: oklch(0.5500 0.2200 263);
   --chart-4: oklch(0.4900 0.2200 264);
   --chart-5: oklch(0.4200 0.1800 266);
-  --sidebar: oklch(0.2050 0 0);
-  --sidebar-foreground: oklch(0.9850 0 0);
-  --sidebar-primary: oklch(0.4880 0.2430 264.3760);
-  --sidebar-primary-foreground: oklch(0.9850 0 0);
-  --sidebar-accent: oklch(0.2690 0 0);
-  --sidebar-accent-foreground: oklch(0.9850 0 0);
-  --sidebar-border: oklch(0.2750 0 0);
-  --sidebar-ring: oklch(0.4390 0 0);
+  --sidebar: var(--color-primary-darkest);
+  --sidebar-foreground: var(--color-neutral-lightest);
+  --sidebar-primary: var(--color-primary-light);
+  --sidebar-primary-foreground: var(--color-neutral-darkest);
+  --sidebar-accent: var(--color-secondary-light);
+  --sidebar-accent-foreground: var(--color-neutral-darkest);
+  --sidebar-border: var(--color-primary-dark);
+  --sidebar-ring: var(--color-secondary-main);
   --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -111,7 +117,7 @@
   --shadow-lg: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 4px 6px -1px hsl(0 0% 0% / 0.10);
   --shadow-xl: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 8px 10px -1px hsl(0 0% 0% / 0.10);
   --shadow-2xl: 0 1px 3px 0px hsl(0 0% 0% / 0.25);
-}
+} */
 
 @theme inline {
   --color-background: var(--background);
@@ -202,6 +208,9 @@
 }
 
 @layer base {
+  html.dark {
+    color-scheme: light;
+  }
   * {
     @apply border-border outline-ring/50;
   }
@@ -209,39 +218,68 @@
     @apply bg-background text-foreground;
   }
 
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-norican leading-none text-shadow-lg;
+  }
+
   h2 {
-    @apply text-3xl font-semibold leading-snug;
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-norican leading-snug;
   }
 
   h3 {
-    @apply text-2xl font-semibold;
+    @apply font-inter font-bold text-3xl md:text-4xl leading-snug;
+  }
+
+  h4 {
+    @apply font-inter font-bold text-xl md:text-2xl leading-snug;
   }
 
   p {
-    @apply text-base leading-relaxed text-muted-foreground;
+    @apply text-base md:text-lg font-inter font-normal leading-relaxed;
   }
 
   a {
-    @apply underline-offset-4 hover:underline;
+    @apply text-xl font-bold underline-offset-4 hover:underline;
   }
 }
 
 @layer utilities {
-  .header-style {
-    @apply font-norican text-[64px] leading-none;
+  .logo-style {
+    @apply font-norican text-2xl sm:text-4xl md:text-5xl lg:text-6xl text-primary hover:scale-105 text-shadow-lg
   }
 
-  .text-style {
-    @apply font-inter font-semibold text-[24px] leading-normal text-neutral-darkest;
+  .lead {
+    @apply text-xl md:text-2xl lg:text-3xl font-inter text-foreground;
   }
 
-  .label-style {
-    @apply font-inter font-semibold text-[16px] tracking-[0.05rem] leading-normal
+  .subtext {
+    @apply text-sm font-inter text-muted-foreground leading-normal;
+  }
+  
+  .muted {
+    @apply text-muted-foreground;
   }
 
-  .emphasise-style {
-    @apply font-inter font-bold text-[32px] leading-tight;
+  .caption {
+    @apply text-xs font-inter text-muted-foreground leading-tight;
   }
+
+  .footer-link {
+    @apply text-xl text-primary-foreground font-bold underline-offset-4 hover:underline hover:text-primary-foreground;
+  }
+
+  .text-on-dark {
+    @apply text-neutral-lightest;
+  }
+
+  .text-on-light {
+    @apply text-neutral-darkest;
+  }
+
+  .bg-background-1 { background-color: var(--background-1); }
+  .bg-background-2 { background-color: var(--background-2); }
+  .bg-background-3 { background-color: var(--background-3); }
+  .bg-background-4 { background-color: var(--background-4); }
 
   .physical-primary-button {
     box-shadow: 0px 4px 0px var(--color-primary-dark);
