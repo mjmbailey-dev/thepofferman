@@ -4,6 +4,7 @@ import Journey from "@/components/sections/about/Journey";
 import AboutUsGallery from "@/components/sections/about/about-us-gallary";
 import AboutUsCTA from "@/components/sections/about/about-us-cta";
 import HomeCTA from "@/components/sections/home/home-cta";
+import AboutFAQ from "@/components/sections/about/about-faq";
 
 export default function AboutUs() {
     return(
@@ -14,6 +15,7 @@ export default function AboutUs() {
             <AboutUsGallery/>
             <AboutUsCTA/>
             <HomeCTA/>
+            <AboutFAQ/>
         </div>
     )
 }

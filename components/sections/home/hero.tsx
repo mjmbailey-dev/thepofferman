@@ -1,7 +1,7 @@
-'use client'
-
 import Image from "next/image";
 import BrandButton from "../../ui/custom/BrandButton";
+import { ChevronRight } from "lucide-react";
+import Link from "next/link";
 
 
 
@@ -24,8 +24,12 @@ export default function Hero(){
                             </p>
                             
                             <div className="flex flex-col sm:flex-row w-full sm:w-auto gap-4 justify-center lg:justify-start pt-4">
-                                <BrandButton variant={"secondary"} size={"lg"} fullWidth>Find Us</BrandButton>
-                                <BrandButton variant={"primary"} size={"lg"} fullWidth>Contact Us</BrandButton>
+                                <Link href={''}>
+                                    <BrandButton variant={"primary"} size={"lg"} fullWidth>Contact Us</BrandButton>
+                                </Link>
+                                <Link href={'/markets'}>
+                                    <BrandButton variant={"muted"} size={"lg"} fullWidth>Find Us<ChevronRight/></BrandButton>
+                                </Link>
                             </div>
                         </div>
                         <div className="flex justify-center lg:justify-end items-center">

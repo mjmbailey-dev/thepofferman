@@ -239,7 +239,7 @@
   }
 
   a {
-    @apply text-xl font-bold underline-offset-4 hover:underline;
+    @apply text-xl md:text-3xl font-bold underline-offset-4 hover:underline;
   }
 }
 
@@ -249,11 +249,11 @@
   }
 
   .lead {
-    @apply text-xl md:text-2xl lg:text-3xl font-inter text-foreground;
+    @apply text-lg md:text-xl lg:text-2xl font-inter;
   }
 
   .subtext {
-    @apply text-sm font-inter text-muted-foreground leading-normal;
+    @apply text-sm font-inter leading-normal;
   }
   
   .muted {
@@ -267,13 +267,16 @@
   .footer-link {
     @apply text-xl text-primary-foreground font-bold underline-offset-4 hover:underline hover:text-primary-foreground;
   }
+  .nav-link {
+    @apply text-xl text-primary font-bold underline-offset-4 hover:underline hover:text-primary-foreground;
+  }
 
   .text-on-dark {
-    @apply text-neutral-lightest;
+    @apply text-neutral-lightest!;
   }
 
   .text-on-light {
-    @apply text-neutral-darkest;
+    @apply text-neutral-darkest!;
   }
 
   .bg-background-1 { background-color: var(--background-1); }
