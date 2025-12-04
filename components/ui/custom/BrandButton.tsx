@@ -3,12 +3,12 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const brandButtonVariants = cva(
-    "rounded-full font-inter font-semibold transition-all hover:cursor-pointer", 
+    "rounded-full subtext transition-all hover:cursor-pointer", 
     {
     variants: {
         variant: {
             primary:
-            "bg-primary-main border-primary-dark border-2 physical-primary-button hover:bg-primary-dark focus:primary-dark",
+            "bg-primary-main text-primary-foreground! border-primary-dark border-2 physical-primary-button hover:bg-primary-dark focus:primary-dark",
             secondary:
             "bg-secondary-main text-secondary-foreground border-secondary-dark border-2 physical-secondary-button hover:bg-secondary-dark focus:secondary-dark",
             muted:
@@ -16,7 +16,7 @@ const brandButtonVariants = cva(
         },
         size: {
             default: "px-4 py-2 text-sm",
-            sm: "px-6 py-3 text-base",
+            sm: "px-6 py-3 text-xs!",
             lg: "px-7 py-3 text-lg md:px-8 md:py-4 md:text-xl",
         },
         fullWidth: {

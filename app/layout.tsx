@@ -5,8 +5,20 @@ import ThemeProvider from "@/components/providers/ThemeProvider";
 import { SidebarProvider } from "@/components/ui/sidebar";
 import AppSidebar from "@/components/layouts/AppSidebar";
 
-import { Inter, Norican } from "next/font/google";
+import { Inter, Merriweather, Merriweather_Sans, Norican } from "next/font/google";
 import Footer from "@/components/layouts/Footer";
+
+const fontSerif = Merriweather({
+  subsets: ["latin"],
+  weight: ["300", "400", "700", "900"],
+  variable: "--font-serif",
+});
+
+export const fontSans = Merriweather_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "700"],
+  variable: "--font-sans",
+});
 
 const norican = Norican({
   weight: "400",
@@ -37,7 +49,7 @@ export default function RootLayout({
         <ThemeProvider/>
       </head>
       <body
-            className={`${norican.variable} ${inter.variable} antialiased w-screen css-selector dark:dark-css-selector`}
+            className={`${norican.variable} ${inter.variable} ${fontSerif.variable} ${fontSans.variable} antialiased w-screen css-selector dark:dark-css-selector`}
             >
         <SidebarProvider>
           <main className="w-full">
