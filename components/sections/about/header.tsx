@@ -10,7 +10,6 @@ export default function AboutUsHeader() {
                 <h1 className="text-center">The PofferMan</h1>
                 <h3 className="text-center">A Story</h3>
                 <p className="lead text-center">I crossed the world to make something real and awesome</p>
-                <BrandButton variant='muted' className="max-w-40 mx-auto"><ChevronDown/></BrandButton>
             </div>
         </section>
     )

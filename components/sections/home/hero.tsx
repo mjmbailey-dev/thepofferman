@@ -11,7 +11,7 @@ export default function Hero(){
         <section className="w-full bg-background-2 h-auto flex justify-center py-10 md:py-15 lg:py-20">
             <div className="max-w-7xl mt-20 md:mt-15 lg:mt-10 mx-10 w-full">
 
-                <div className="border-4 border-primary flex flex-col justify-center rounded-3xl pt-16 sm:pt-20 pb-10 px-6 sm:px-10 lg:px-16 ">
+                <div className="border-4 border-primary flex flex-col justify-center rounded-3xl pt-16 sm:pt-20 pb-10 px-6 sm:px-10 lg:px-16 drop-shadow-2xl!">
                     <h1 className="text-center mb-12">Do You Know The PofferMan?!</h1>
                     <div className="flex flex-col lg:flex-row lg:justify-between justify-center gap-16 md:gap-20">
                         <div className="flex flex-col justify-center text-center max-w-xl mx-auto md:text-left gap-4">

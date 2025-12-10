@@ -24,14 +24,6 @@ export default function Journey(){
                         </p>
                         <p className="">See you soon!</p>
                     </div>
-
-                    <div className="flex justify-center">
-                        <BrandButton variant="muted" className="max-w-40">
-                            <Minus className="scale-300" />
-                            <ChevronDown className="scale-150" />
-                            <Minus className="scale-300" />
-                        </BrandButton>
-                    </div>
                 </div>
 
                 {/* IMAGE COLUMN */}

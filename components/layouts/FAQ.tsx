@@ -33,7 +33,7 @@ export default function FAQ({ items, type = 'multiple'}: FAQProps) {
                 <span>{faq.question}</span>
             </AccordionTrigger>
 
-            <AccordionContent className="subtext">
+            <AccordionContent className="muted text-white!">
                 {faq.answer}
             </AccordionContent>
         </AccordionItem>
