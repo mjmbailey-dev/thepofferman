@@ -14,7 +14,7 @@ export default function PageSection({
   return (
     <section
       className={cn(
-        "flex justify-center w-full py-10 md:py-20"
+        "flex justify-center w-full py-10 md:py-20 -z-50"
         ,className
         )}
     >

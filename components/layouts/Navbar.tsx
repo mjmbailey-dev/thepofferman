@@ -1,12 +1,13 @@
 'use client'
 import useTheme from "@/hooks/useTheme";
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "../ui/navigation-menu";
-import { SidebarTrigger } from "../ui/sidebar";
 import BrandButton from "../ui/custom/BrandButton";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { Plus } from "lucide-react";
+import { CustomSidebarTrigger } from "../ui/custom/customSidebarTrigger";
 
-const linkClasses = "nav-link hidden lg:flex bg-transparent hover:bg-transparent focus:bg-transparent "
+const linkClasses = "link hidden lg:flex bg-transparent hover:bg-transparent focus:bg-transparent "
 
 export default function Navbar() {
     useTheme();
@@ -29,7 +30,7 @@ export default function Navbar() {
                                     <NavigationMenuLink asChild className={linkClasses}><Link href='/markets'>Markets</Link></NavigationMenuLink>
                                 </NavigationMenuItem>
                                 <NavigationMenuItem>
-                                    <NavigationMenuTrigger className={cn("hover:bg-transparent hover:text-accent-foreground focus:bg-transparent focus:text-accent-foreground data-[state=open]:hover:bg-transparent data-[state=open]:text-accent-foreground data-[state=open]:focus:bg-transparent data-[state=open]:bg-transparent", linkClasses)}>
+                                    <NavigationMenuTrigger className={cn("link hover:bg-transparent hover:text-accent-foreground focus:bg-transparent focus:text-accent-foreground data-[state=open]:hover:bg-transparent data-[state=open]:text-accent-foreground data-[state=open]:focus:bg-transparent data-[state=open]:bg-transparent", linkClasses)}>
                                         More
                                     </NavigationMenuTrigger>
                                     <NavigationMenuContent>
@@ -40,7 +41,7 @@ export default function Navbar() {
                                 <BrandButton variant="primary" size={'lg'} className="hidden sm:inline-flex">
                                     Contact Us
                                 </BrandButton>
-                                <SidebarTrigger className="md:hidden" variant={"default"}/>
+                                <CustomSidebarTrigger className="md:hidden"/>
                             </NavigationMenuList>
                     </NavigationMenu>
                 </div>

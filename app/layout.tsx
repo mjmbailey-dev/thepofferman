@@ -51,7 +51,7 @@ export default function RootLayout({
       <body
             className={`${norican.variable} ${inter.variable} ${fontSerif.variable} ${fontSans.variable} antialiased w-screen css-selector dark:dark-css-selector`}
             >
-        <SidebarProvider>
+        <SidebarProvider className="">
           <main className="w-full">
             <AppSidebar/>
             <Navbar/>
