@@ -17,7 +17,7 @@ export function MarketCard({
     mapLink,
 }: MarketCardProps){
     return(
-        <div className="bg-background-2 rounded-xl p-6 shadow-lg flex justify-between items-center w-full text-on-light">
+        <div className="bg-background-2 rounded-xl p-6 shadow-lg flex justify-between items-center w-full text-on-light hover:scale-101 transition">
             <div>
                 <h3>{name}</h3>
                 <p className="muted">{days}</p>
