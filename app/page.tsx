@@ -13,7 +13,7 @@ export default function Home() {
       <Menu/>
       <LoyaltyRewards/>
       <MarketLocations/>
-      <HomeCTA/>
+      <HomeCTA className="bg-background-4"/>
     </div>
   );
 }
