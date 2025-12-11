@@ -25,7 +25,6 @@ export default function Footer(){
                 <div className="flex flex-col md:flex-row justify-between gap-5">
                     <div className="flex flex-col md:flex-row gap-5">
                         <Link className="footer-link font-light!" href='/privacy-policy'>Privacy Policy</Link>
-                        <Link className="footer-link font-light!" href='/cookies-settings'>Cookies Settings</Link>
                         <Link className="footer-link font-light!" href='/terms-of-service'>Terms of Service</Link>
                     </div>
                     <span>&copy; 2025 The Pofferman. All rights reserved. </span>
