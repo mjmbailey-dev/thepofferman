@@ -38,9 +38,11 @@ export default function Navbar() {
                                         <NavigationMenuLink asChild><Link href='/faq'>FAQ's</Link></NavigationMenuLink>
                                     </NavigationMenuContent>
                                 </NavigationMenuItem>
-                                <BrandButton variant="primary" size={'lg'} className="hidden sm:inline-flex">
-                                    Contact Us
-                                </BrandButton>
+                                <Link href="/contact">
+                                    <BrandButton variant="primary" size={'lg'} className="hidden sm:inline-flex">
+                                        Contact Us
+                                    </BrandButton>
+                                </Link>
                                 <CustomSidebarTrigger className="md:hidden"/>
                             </NavigationMenuList>
                     </NavigationMenu>

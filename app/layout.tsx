@@ -34,7 +34,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "The Pofferman",
-  description: "Moving from the Netherlands to Australia was a big adventure. It inspired me to start my own poffertjes business! Now, I bring this delicious Dutch treat to your local farmers market, and can’t wait to share the taste of home with you.",
+  description: "Moving from the Netherlands to Australia was a big adventure. It inspired me to start my own poffertjes business! Now, I bring this delicious Dutch treat to your local farmers market, and can\’t wait to share the taste of home with you.",
 };
 
 

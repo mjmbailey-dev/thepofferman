@@ -12,7 +12,7 @@ const brandButtonVariants = cva(
             secondary:
             "bg-secondary-main text-secondary-foreground border-secondary-dark border-2 physical-secondary-button hover:bg-secondary-dark focus:secondary-dark",
             muted:
-            "bg-transparent hover:bg-transparent hover:text-primary hover:scale-110",
+            "bg-transparent text-current hover:bg-transparent hover:text-primary hover:scale-110",
         },
         size: {
             default: "px-4 py-2 text-sm",

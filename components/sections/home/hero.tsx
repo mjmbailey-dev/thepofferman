@@ -24,7 +24,7 @@ export default function Hero(){
                             </p>
                             
                             <div className="flex flex-col sm:flex-row w-full sm:w-auto gap-4 justify-center lg:justify-start pt-4">
-                                <Link href={''}>
+                                <Link href={"/contact"}>
                                     <BrandButton variant={"primary"} size={"lg"} fullWidth>Contact Us</BrandButton>
                                 </Link>
                                 <Link href={'/markets'}>
