@@ -40,9 +40,22 @@ import { Calendar as CalendarIcon, X } from "lucide-react";
 
 type Schema = z.infer<typeof formSchema>;
 
+const defaultValues: Schema = {
+  reason: "",
+  name: "",
+  "togglegroup-preferred-method": [],
+  "input-mobile": "",
+  email: "",
+  message: "",
+  "datepicker-event-date": [],
+  "select-event-size": "",
+  "textarea-event-description": "",
+};
+
 export function ContactForm() {
   const form = useForm<Schema>({
     resolver: zodResolver(formSchema),
+    defaultValues
   });
   const formAction = useAction(serverAction, {
     onSuccess: () => {
@@ -469,7 +482,7 @@ export function ContactForm() {
     )} 
     </AnimatePresence>
       <div className="flex justify-end items-center w-full">
-        <BrandButton variant={'muted'}>Reset</BrandButton>
+        <BrandButton variant={'muted'} type="button" onClick={() => form.reset(defaultValues)}>Reset</BrandButton>
         <BrandButton>{isExecuting ? "Submitting..." : "Submit"}</BrandButton>
       </div>
     </form>
