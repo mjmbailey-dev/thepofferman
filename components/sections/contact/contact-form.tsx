@@ -1,4 +1,5 @@
 import PageSection from "@/components/layouts/PageSection";
+import { ContactForm } from "@/components/ui/custom/form";
 import { Mail, MapPinCheck, MessageCircle } from "lucide-react";
 import Link from "next/link";
 
@@ -6,7 +7,7 @@ export default function ContactFormSection() {
     return(
         <PageSection className="bg-background-4">
             <div className="flex flex-col lg:flex-row gap-5">
-                <div className="flex flex-col gap-5">
+                <div className="flex flex-col flex-2 gap-5">
                     <div className="">
                         <p className="subtext">Connect</p>
                         <h2>Send us a message</h2>
@@ -17,6 +18,9 @@ export default function ContactFormSection() {
                         <div className="flex gap-2"><MessageCircle className="w-6 h-6"/><Link className="link" href="https://api.whatsapp.com/send?phone=61491017249">+61 491 017 249</Link></div>
                         <div className="flex gap-2"><MapPinCheck className="w-6 h-6"/><Link className="link" href="/markets">Find Us</Link></div>
                     </div>
+                </div>
+                <div className="flex-2">
+                    <ContactForm/>
                 </div>
             </div>
         </PageSection>
