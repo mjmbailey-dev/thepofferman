@@ -3,7 +3,7 @@ import EventsIncluded from "@/components/sections/events/events-included";
 import EventsBenefits from "@/components/sections/events/events-benefits";
 import PastEvents from "@/components/sections/events/events-gallery";
 import EventsReviews from "@/components/sections/events/events-reviews";
-
+import EventsFAQ from "@/components/sections/events/events-faq";
 export default function EventPage(){
     return(
         <div className="mt-10 md:mt-15 lg:mt-20">
@@ -12,6 +12,7 @@ export default function EventPage(){
             <EventsBenefits/>
             <PastEvents/>
             {/* <EventsReviews/> */}
+            <EventsFAQ/>
         </div>
     )
 }
