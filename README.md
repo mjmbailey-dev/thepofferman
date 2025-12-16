@@ -1,3 +1,31 @@
+## The Pofferman Website
+
+A modern marketing website built with Next.js for a small food business.
+This project focuses on component-driven UI, responsive design, and
+maintainable styling patterns.
+
+## Tech Stack
+- Next.js (App Router)
+- React
+- Tailwind CSS
+- ShadCN UI
+- Vercel
+
+## What I focused on
+- Reusable UI components
+- Responsive layouts across breakpoints
+- Design system consistency
+- Performance and accessibility fundamentals
+
+## Status
+In progress — initial marketing site deployed for stakeholder review, with
+planned iterations including CMS integration and dynamic content.
+
+Live preview: https://thepofferman.vercel.app
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
