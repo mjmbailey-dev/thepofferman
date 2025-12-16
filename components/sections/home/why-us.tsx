@@ -1,5 +1,6 @@
 import BrandButton from "@/components/ui/custom/BrandButton";
 import { ArrowRight, ChefHatIcon, PartyPopper, ReceiptText } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyUs(){
     return(
@@ -29,8 +30,8 @@ export default function WhyUs(){
                     </div>
 
                     <div className="flex flex-row justify-center gap-8">
-                        <BrandButton variant={"secondary"} size="lg" className="min-w-10">Find us</BrandButton>
-                        <BrandButton variant={"muted"} size={"lg"} className="min-w-10">More <ArrowRight/></BrandButton>
+                        <Link href={'/markets'}><BrandButton asChild variant={"secondary"} size="lg" className="min-w-10">Find us</BrandButton></Link>
+                        <Link href={'/events'}><BrandButton asChild variant={"muted"} size={"lg"} className="min-w-10">More <ArrowRight/></BrandButton></Link>
                     </div>
                 </div>
             </div>

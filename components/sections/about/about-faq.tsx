@@ -14,7 +14,7 @@ export default function AboutFAQ(){
                     <h3 className="">FAQ</h3>
                     <p className="">Some answers to questions about us and Dutch pancakes!</p>
                     <div className="flex gap-5 align-middle items=center">
-                        <Link href=''>
+                        <Link href='/contact'>
                             <BrandButton className="w-fit"  variant={'secondary'}>Contact</BrandButton>
                         </Link>
                         <Link href='/faq'>
