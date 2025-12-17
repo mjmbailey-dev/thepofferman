@@ -4,6 +4,7 @@ import Navbar from "@/components/layouts/Navbar";
 import ThemeProvider from "@/components/providers/ThemeProvider";
 import { SidebarProvider } from "@/components/ui/sidebar";
 import AppSidebar from "@/components/layouts/AppSidebar";
+import { Analytics } from "@vercel/analytics/next"
 
 import { Inter, Merriweather, Merriweather_Sans, Norican } from "next/font/google";
 import Footer from "@/components/layouts/Footer";
@@ -46,6 +47,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="w-screen overflow-x-hidden">
       <head>
+        <Analytics/>
         <ThemeProvider/>
       </head>
       <body
