@@ -17,7 +17,6 @@ import {
   FieldSeparator,
 } from "@/components/ui/field";
 import { Button } from "@/components/ui/button";
-import BrandButton from "./BrandButton";
 import {
   Select,
   SelectContent,
@@ -113,7 +112,7 @@ export function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="p-2 sm:p-5 md:p-8 w-full rounded-md gap-2 border max-w-3xl mx-auto"
+      className="p-2 sm:p-5 md:p-8 w-full rounded-md gap-2 border max-w-3xl mx-auto bg-background-1"
     >
         <FieldGroup className="grid md:grid-cols-6 gap-4 mb-6">
             <Controller
@@ -482,8 +481,8 @@ export function ContactForm() {
     )} 
     </AnimatePresence>
       <div className="flex justify-end items-center w-full">
-        <BrandButton variant={'muted'} type="button" onClick={() => form.reset(defaultValues)}>Reset</BrandButton>
-        <BrandButton>{isExecuting ? "Submitting..." : "Submit"}</BrandButton>
+        <Button variant={'ghost'} type="button" onClick={() => form.reset(defaultValues)}>Reset</Button>
+        <Button>{isExecuting ? "Submitting..." : "Submit"}</Button>
       </div>
     </form>
   );

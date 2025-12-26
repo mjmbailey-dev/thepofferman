@@ -12,7 +12,7 @@ export default function ContactInfo(){
                     <h2>Drop us a line</h2>
                     <p className="">We read every message and get back fast!</p>
                 </div>
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-5 gap-y-10 text-black!">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-5 gap-y-10">
 
                     <div className="grid grid-rows-[auto,1fr,auto] gap-8">
                         <Mail className="w-8 h-8"/>

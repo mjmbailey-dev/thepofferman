@@ -2,7 +2,7 @@ import FAQ from "@/components/layouts/FAQ";
 import { FAQ_MARKETS } from "@/data";
 import PageSection from "@/components/layouts/PageSection";
 import Link from "next/link";
-import BrandButton from "@/components/ui/custom/BrandButton";
+import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
 
 export default function MarketsFAQ(){
@@ -14,10 +14,10 @@ export default function MarketsFAQ(){
                         <p className="">Some answers to questions about our markets!</p>
                         <div className="flex gap-5 align-middle items=center">
                             <Link href='/contact'>
-                                <BrandButton className="w-fit"  variant={'secondary'}>Contact</BrandButton>
+                                <Button className="w-fit"  variant={'default'}>Contact</Button>
                             </Link>
                             <Link href='/faq'>
-                                <BrandButton className="w-fit text-on-dark"  variant={'muted'}>Full FAQ<ChevronRight/></BrandButton>
+                                <Button className="w-fit text-on-dark"  variant={'ghost'}>Full FAQ<ChevronRight/></Button>
                             </Link>
                         </div>
                     </div>
