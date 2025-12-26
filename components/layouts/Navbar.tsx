@@ -1,7 +1,7 @@
 'use client'
 import useTheme from "@/hooks/useTheme";
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "../ui/navigation-menu";
-import BrandButton from "../ui/custom/BrandButton";
+import { Button } from "../ui/button";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { Plus } from "lucide-react";
@@ -12,7 +12,7 @@ const linkClasses = "link hidden lg:flex bg-transparent hover:bg-transparent foc
 export default function Navbar() {
     useTheme();
     return(
-        <div className="fixed bg-background-2 min-h-20 w-full border-b-2 border-primary-light z-50 flex justify-center">
+        <div className="fixed bg-background min-h-20 w-full border-b-2 border-primary z-50 flex justify-center">
                 <div className="max-w-7xl w-full mx-10 flex justify-between items-center align-middle">
                     <Link className="logo-style" href='/'>
                         The Pofferman
@@ -39,9 +39,9 @@ export default function Navbar() {
                                     </NavigationMenuContent>
                                 </NavigationMenuItem>
                                 <Link href="/contact">
-                                    <BrandButton variant="primary" size={'lg'} className="hidden sm:inline-flex">
+                                    <Button variant="default" className="hidden sm:inline-flex">
                                         Contact Us
-                                    </BrandButton>
+                                    </Button>
                                 </Link>
                                 <CustomSidebarTrigger className="md:hidden"/>
                             </NavigationMenuList>

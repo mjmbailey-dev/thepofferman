@@ -1,4 +1,4 @@
-import BrandButton from "@/components/ui/custom/BrandButton";
+import { Button } from "@/components/ui/button";
 import { ArrowRight, ChefHatIcon, PartyPopper, ReceiptText } from "lucide-react";
 import Link from "next/link";
 
@@ -30,8 +30,8 @@ export default function WhyUs(){
                     </div>
 
                     <div className="flex flex-row justify-center gap-8">
-                        <Link href={'/markets'}><BrandButton asChild variant={"secondary"} size="lg" className="min-w-10">Find us</BrandButton></Link>
-                        <Link href={'/events'}><BrandButton asChild variant={"muted"} size={"lg"} className="min-w-10">More <ArrowRight/></BrandButton></Link>
+                        <Link href={'/markets'}><Button variant={"default"} size="lg" className="min-w-10">Find us</Button></Link>
+                        <Link href={'/events'}><Button variant={"outline"} size={"lg"} className="min-w-10">More <ArrowRight/></Button></Link>
                     </div>
                 </div>
             </div>

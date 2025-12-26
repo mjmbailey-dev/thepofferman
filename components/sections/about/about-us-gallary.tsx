@@ -4,7 +4,7 @@ const ImageClasses = "aspect-square rounded-xl shadow-2xl hover:scale-102 transi
 
 export default function AboutUsGallery(){
     return(
-        <section className="bg-background-3 text-on-dark flex justify-center w-full py-10 md:py-20">
+        <section className="bg-background-3 flex justify-center w-full py-10 md:py-20">
             <div className="max-w-7xl w-full flex flex-col mx-10 gap-5 justify-center">
                 <div className="flex flex-col justify-center w-full">
                     <h2 className="text-center">Our Journey</h2>

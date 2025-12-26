@@ -1,5 +1,5 @@
 import Image from "next/image";
-import BrandButton from "../../ui/custom/BrandButton";
+import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 
@@ -25,10 +25,10 @@ export default function Hero(){
                             
                             <div className="flex flex-col sm:flex-row w-full sm:w-auto gap-4 justify-center lg:justify-start pt-4">
                                 <Link href={"/contact"}>
-                                    <BrandButton variant={"primary"} size={"lg"} fullWidth>Contact Us</BrandButton>
+                                    <Button variant={"default"} size={"lg"}>Contact Us</Button>
                                 </Link>
                                 <Link href={'/markets'}>
-                                    <BrandButton variant={"muted"} size={"lg"} fullWidth>Find Us<ChevronRight/></BrandButton>
+                                    <Button variant={"outline"} size={"lg"}>Find Us<ChevronRight/></Button>
                                 </Link>
                             </div>
                         </div>

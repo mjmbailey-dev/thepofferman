@@ -1,5 +1,5 @@
 import PageSection from "@/components/layouts/PageSection";
-import BrandButton from "@/components/ui/custom/BrandButton";
+import { Button } from "@/components/ui/button";
 import { ChevronRight, ChefHatIcon, PartyPopper } from "lucide-react";
 import { ContentCard } from "@/components/ui/custom/content-cards";
 
@@ -19,7 +19,7 @@ export default function EventsIncluded(){
                         subtext="Feature"
                         contentHeader="Design your own Poffertjes menu" 
                         contentBody="Choose from classic toppings or create something entirely new for your guests." 
-                        contentFooter={<BrandButton variant={'muted'} className="mx-0! px-0! text-white! opacity-100!">Explore<ChevronRight/></BrandButton>} 
+                        contentFooter={<Button variant={'ghost'} className="mx-0! px-0! opacity-100!">Explore<ChevronRight/></Button>} 
                         bgSrc="/insta-screenshot-2.png"/>
                     </div>
                     <div className="">
@@ -30,7 +30,7 @@ export default function EventsIncluded(){
                         subtext={<ChefHatIcon size={30}/>}
                         contentHeader="Watch them cook right before your eyes" 
                         contentBody="Fresh poffertjes made on-site bring magic to any gathering." 
-                        contentFooter={<BrandButton variant={'muted'} className="mx-0! px-0! text-white! opacity-100!">Explore<ChevronRight/></BrandButton>} 
+                        contentFooter={<Button variant={'ghost'} className="mx-0! px-0! opacity-100!">Explore<ChevronRight/></Button>} 
                         bgSrc="/insta-screenshot-1.png"/>
                     </div>
                     <div className="">
@@ -41,7 +41,7 @@ export default function EventsIncluded(){
                         subtext={<PartyPopper size={30}/>}
                         contentHeader="Perfect for any celebration you can imagine" 
                         contentBody="Birthdays, weddings, corporate events, or intimate gatherings all work beautifully." 
-                        contentFooter={<BrandButton variant={'muted'} className="mx-0! px-0! text-white! opacity-100!">Explore<ChevronRight/></BrandButton>} 
+                        contentFooter={<Button variant={'ghost'} className="mx-0! px-0! opacity-100!">Explore<ChevronRight/></Button>} 
                         bgSrc="/insta-screenshot-3.png"/>
                     </div>
                 </div>

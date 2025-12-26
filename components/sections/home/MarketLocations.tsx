@@ -19,7 +19,7 @@ const markets = [
 
 export default function MarketLocations(){
     return(
-        <section className="w-full bg-background-3 h-auto flex justify-center py-10 md:py-15 text-on-dark">
+        <section className="w-full bg-background-3 h-auto flex justify-center py-10 md:py-15">
             <div className="max-w-7xl mx-10 mt-10 w-full">
                 <h2 className="text-center">Find Us?</h2>
                 <div className="flex flex-col w-full gap-5 mt-10">

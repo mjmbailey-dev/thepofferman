@@ -1,4 +1,4 @@
-import BrandButton from "@/components/ui/custom/BrandButton";
+import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { CalendarCheck, ChevronRight, Store } from "lucide-react";
 import Link from "next/link";
@@ -17,8 +17,8 @@ export default function HomeCTA({className} : HomeCTAProps){
                         <h3 className="">Book your event</h3>
                         <p className="max-w-sm md:max-w-md">Let us bring authentic poffertjes to your celebration. We handle the cooking, you enjoy the moment.</p>
                         <div className="">
-                            <Link href={'/contact'}><BrandButton>Contact Us</BrandButton></Link>
-                            <Link href={'/events'}><BrandButton variant={'muted'}>Learn More <ChevronRight/></BrandButton></Link>
+                            <Link href={'/contact'}><Button variant={'default'}>Contact Us</Button></Link>
+                            <Link href={'/events'}><Button variant={'ghost'}>Learn More <ChevronRight/></Button></Link>
                         </div>
                     </div>
                     <div className="flex flex-1 flex-col gap-4">
@@ -26,8 +26,8 @@ export default function HomeCTA({className} : HomeCTAProps){
                         <h3 className="">Find us at Markets</h3>
                         <p className="max-w-sm md:max-w-md">Visit The Pofferman at your local market. Check our schedule and stop by for fresh poffertjes.</p>
                         <div className="">
-                            <Link href={'/markets'}><BrandButton variant={'secondary'}>Find Us</BrandButton></Link>
-                            <Link href={'/faq'}><BrandButton variant={'muted'}>Learn More <ChevronRight/></BrandButton></Link>
+                            <Link href={'/markets'}><Button variant={'default'}>Find Us</Button></Link>
+                            <Link href={'/faq'}><Button variant={'ghost'}>Learn More <ChevronRight/></Button></Link>
                         </div>
                     </div>
                 </div>

@@ -1,4 +1,4 @@
-import BrandButton from "@/components/ui/custom/BrandButton";
+import { Button } from "@/components/ui/button";
 import { ArrowRight, PlusIcon } from "lucide-react";
 
 export interface MarketCardProps {
@@ -24,9 +24,9 @@ export function MarketCard({
                 <p className="muted">{time}</p>
                 <p className="muted">{suburb}</p>
             </div>
-            <div className="flex flex-col">
-                <BrandButton variant={"muted"} size={"lg"} className="min-w-10">Take Me! <ArrowRight/></BrandButton>
-                <BrandButton variant={"muted"} size={"lg"} className="min-w-10">More Info <PlusIcon/></BrandButton>
+            <div className="flex flex-col gap-5">
+                <Button variant={"default"} size={"lg"} className="min-w-10">Take Me! <ArrowRight/></Button>
+                <Button variant={"ghost"} size={"lg"} className="min-w-10">More Info <PlusIcon/></Button>
             </div>
         </div>
     )
